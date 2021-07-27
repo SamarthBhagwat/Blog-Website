@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+    <h1>Contact</h1>
+    <!-- <p> <%= contactContent %> </p> -->
+
+    <br><br>
+    <form  action="mailto:thecodingthug@gmail.com?subject=feedback" method="post">
+      <div class="form-group">
+        <label>Your First Name</label>
+        <input class="form-control" type="text" name="firstName" value=""><br>
+        <label>Your Last Name</label>
+        <input class="form-control" type="text" name="lastName" value=""><br>
+        <label>Your Email Address</label>
+        <input class="form-control" type="email" name="emailAddress" value=""><br>
+        <label>Your Phone</label>
+        <input class="form-control" type="tel" name="mobileNumber" value=""><br>
+        <label>Your Message</label>
+        <textarea class="form-control" name="message" rows="8" cols="80"></textarea><br>
+
+      </div>
+
+      <div class="text-center form-group">
+        <button class="btn btn-primary" type="submit" name="button">Submit</button>
+      </div>
+      <br><br>
+
+
+      </form>
+<%- include("partials/footer"); -%>
